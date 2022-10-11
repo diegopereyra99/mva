@@ -19,12 +19,15 @@ This is just a translation of 460 px in the horizontal axis and works pretty wel
 
 ## Examples
 
-The first to examples are done by clicking corresponences in the images (green little circles). The third one is an estimation.
+The first two examples are done by clicking corresponences in the images (green little circles). The third one is an estimation.
 ### 1
 
-<img src="res/result1.png" style="width: 700px"/>
+<p align="center">
+    <img src="res/result1.png" style="width: 700px"/>
+</p>
 
 $$ \text{Estimated } H=
+\begin{bmatrix}
 1.035 & 0.010 & -476.6 \\
 0.005 & 1.061 & -8.1 \\
 7.98 \times 10^{-6} & 1.235 \times 10^{-4} & 1 \\
@@ -32,7 +35,9 @@ $$ \text{Estimated } H=
 
 ### 2
 
-<img src="res/result2.png" style="width: 700px"/>
+<p align="center">
+    <img src="res/result2.png" style="width: 700px"/>
+</p>
 
 $$ \text{Estimated } H=
 \begin{bmatrix}
@@ -41,12 +46,14 @@ $$ \text{Estimated } H=
 -2.65 \times 10^{-5} & 1.15 \times 10 ^{-5} & 1 \\
 \end{bmatrix}$$
 
+
 ### 3
 
 Here we use a transformation that is only a translation. It is not perfect but is a good rough estimation of the transformation needed to do the panorama construction.
 
-
-<img src="res/est.png" style="width: 600px">
+<p align="center">
+    <img src="res/est.png" style="width: 600px">
+</p>
 
 $$H=
 \begin{bmatrix}
