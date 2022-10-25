@@ -22,8 +22,10 @@ void getClicks(Window w1, Window w2,
 
     while (button != 3) {
         button = anyGetMouse(point, wi, sw);
-        setActiveWindow(wi);
-        drawCircle(point,6,Color(10,255,0),3);
+        if (button != 3) {
+            setActiveWindow(wi);            
+            drawCircle(point,6,Color(10,255,0),3);
+        }
         if (wi == w1) {
             pts1.push_back(point);
         }
@@ -76,6 +78,10 @@ Matrix<float> getHomography(const vector<IntPoint2>& pts1,
     H(0,0)=B[0]; H(0,1)=B[1]; H(0,2)=B[2];
     H(1,0)=B[3]; H(1,1)=B[4]; H(1,2)=B[5];
     H(2,0)=B[6]; H(2,1)=B[7]; H(2,2)=1;
+
+    // H(0,0)=1; H(0,1)=0; H(0,2)=-460;
+    // H(1,0)=0; H(1,1)=1; H(1,2)=0;
+    // H(2,0)=0; H(2,1)=0; H(2,2)=1;
 
     // Sanity check
     for(size_t i=0; i<n; i++) {
